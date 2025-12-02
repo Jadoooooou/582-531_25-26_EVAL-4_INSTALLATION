@@ -7,17 +7,17 @@ MicroOscSlip<128> monOsc(&Serial);
 #include <M5_PbHub.h>
 M5_PbHub myPbHub;
 
-#define BROCHE_ATOM_LIGHT 32
-#define BROCHE_ATOM_PIXEL_KEY 26
-#define BROCHE_ATOM_BOUTON 39
-#define BROCHE_ATOM_PIXEL 27
+// Lights
+#define BROCHE_ATOM_LIGHT1 32
+#define BROCHE_ATOM_LIGHT2 32
 
 // channel du hub où il est utilisé
+// Boutons rouges
 #define KEY_CHANNEL_KEY1 0
 #define KEY_CHANNEL_KEY2 1
 #define KEY_CHANNEL_KEY3 2
 #define KEY_CHANNEL_KEY4 3
-
+// Angles
 #define KEY_CHANNEL_ANGLE1 4
 #define KEY_CHANNEL_ANGLE2 5
 
