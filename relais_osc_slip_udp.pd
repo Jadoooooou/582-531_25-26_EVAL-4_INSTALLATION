@@ -54,6 +54,9 @@
 #X text 38 125 PLAY/PAUSE;
 #X text 26 456 VOLUME AMBIANCE;
 #X text 30 795 CONTROLE PAN;
+#X obj 948 722 loadbang;
+#X obj 950 234 loadbang;
+#X obj 1491 238 loadbang;
 #X connect 0 0 13 0;
 #X connect 0 0 15 0;
 #X connect 0 0 26 0;
@@ -96,3 +99,6 @@
 #X connect 49 0 2 0;
 #X connect 50 0 2 0;
 #X connect 51 0 32 0;
+#X connect 55 0 7 0;
+#X connect 56 0 6 0;
+#X connect 57 0 41 0;
