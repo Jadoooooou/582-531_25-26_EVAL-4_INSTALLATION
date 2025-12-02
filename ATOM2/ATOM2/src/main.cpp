@@ -56,13 +56,13 @@ void loop() {
 
     // oscslip rotation Angle Unit
     int valueAngle1 = myPbHub.analogRead(KEY_CHANNEL_ANGLE1);
-    monOsc.sendInt("/angle1", valueAngle1);
+    monOsc.sendInt("/angleLEDRed", valueAngle1);
 
     int valueAngle2 = myPbHub.analogRead(KEY_CHANNEL_ANGLE2);
-    monOsc.sendInt("/angle2", valueAngle2);
+    monOsc.sendInt("/angleLEDBlue", valueAngle2);
 
     int valueAngle3 = myPbHub.analogRead(KEY_CHANNEL_ANGLE3);
-    monOsc.sendInt("/angle3", valueAngle3);
+    monOsc.sendInt("/angleVolume", valueAngle3);
 
     int valueLight = myPbHub.analogRead(KEY_CHANNEL_LIGHT5);
     monOsc.sendInt("/light", valueLight);
