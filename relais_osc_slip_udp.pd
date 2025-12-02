@@ -1,4 +1,4 @@
-#N canvas 623 10 1092 907 12;
+#N canvas 1235 24 1290 907 12;
 #X obj 390 247 comport;
 #X msg 447 190 devices;
 #X obj 389 863 netsend -u -b;
