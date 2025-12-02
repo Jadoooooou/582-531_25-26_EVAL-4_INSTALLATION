@@ -16,6 +16,7 @@ M5_PbHub myPbHub;
 #define KEY_CHANNEL_LIGHT5 5
 
 //CRGB keyPixel;
+#define BROCHE_ATOM_PIXEL 27
 CRGB atomPixel;
 
 // algorithme d'intervalle
@@ -24,6 +25,22 @@ unsigned long monChronoDepart ;
 void setup() {
   // NE JAMAIS OUBLIER !!!
   Serial.begin(115200);
+
+  // Initialiser FastLED pour contrôler le pixel RGB du M5Atom
+  FastLED.addLeds<WS2812, BROCHE_ATOM_PIXEL , GRB>(&atomPixel, 1); 
+  atomPixel = CRGB(255,255,255); // BLANC
+
+  atomPixel = CRGB(255,0,0); // ROUGE
+  FastLED.show();
+  delay(1000); // PAUSE 1 SECONDE
+  atomPixel = CRGB(255,255,0); // JAUNE
+  FastLED.show();
+  delay(1000); // PAUSE 1 SECONDE
+  atomPixel = CRGB(0,255,0); // VERT
+  FastLED.show();
+  delay(1000); // PAUSE 1 SECONDE
+  atomPixel = CRGB(0,0,0);
+  FastLED.show();
 
   // PBHUB
   Wire.begin();
